@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Homepage_Controller">
+   <children>
+      <SplitPane dividerPositions="0.259" prefHeight="600.0" prefWidth="1002.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <VBox>
+               <children>
+                  <Accordion fx:id="accordion1" cache="true">
+                     <panes>
+                        <TitledPane fx:id="titledpane1" animated="false" collapsible="false" contentDisplay="CENTER" text="CHI SIAMO" textAlignment="CENTER">
+                           <content>
+                              <AnchorPane minWidth="0.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="PANORAMICA" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                  </Accordion>
+                  <Accordion fx:id="accordion2">
+                     <panes>
+                        <TitledPane fx:id="titledpane2" collapsible="false" text="LE NOSTRE ESCURSIONI">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="198.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefWidth="193.0" text="GITE IN BARCA" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Button layoutY="25.0" mnemonicParsing="false" prefWidth="193.0" text="GITE A CAVALLO" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                  </Accordion>
+                  <Accordion fx:id="accordion3">
+                     <panes>
+                        <TitledPane fx:id="titledpane3" collapsible="false" expanded="true" text="AREA UTENTE">
+                           <content>
+                              <AnchorPane maxHeight="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefWidth="198.0">
+                                 <children>
+                                    <Button fx:id="userSignUp" layoutY="1.0" mnemonicParsing="false" onAction="#RegistrationUser" text="REGISTRATI" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Button fx:id="userLogin" layoutY="26.0" mnemonicParsing="false" onAction="#Login" prefWidth="196.0" text="ENTRA" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                  </Accordion>
+                  <Accordion fx:id="accordion4">
+                     <panes>
+                        <TitledPane fx:id="titledpane4" collapsible="false" expanded="true" text="AREA AMMINISTRATORE">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="adminLogin" mnemonicParsing="false" onAction="#Login" prefWidth="196.0" text="ENTRA" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                  </Accordion>
+                  <Accordion fx:id="accordion5">
+                     <panes>
+                        <TitledPane fx:id="titledpane5" collapsible="false" expanded="true" text="CONTATTI">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="198.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefWidth="194.0" text="SCRIVICI" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Button layoutY="25.0" mnemonicParsing="false" prefWidth="194.0" text="SEGNALAZIONI" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                             <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TitledPane>
+                     </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" layoutX="269.0" layoutY="199.0" orientation="VERTICAL" prefHeight="598.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ImageView fx:id="imageView" fitHeight="294.0" fitWidth="755.0" layoutX="-20.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../resources/home.png" />
+                                 </image>
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                              </ImageView>
+                              <AnchorPane layoutX="2.0" layoutY="14.0" prefHeight="43.0" prefWidth="735.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="735.0" text="BENVENUTO IN OPEN TOUR AGENCY" textAlignment="CENTER" textFill="#4d4343cc" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextArea fx:id="descriptionArea" editable="false" layoutX="13.0" layoutY="14.0" prefHeight="200.0" prefWidth="710.0" text="BENVENUTO IN OPEN TOUR AGENCY. PUOI ACCEDERE ALLE VARIE FUNZIONALITA' DEL SOFTWARE ATTRAVERSO IL MENU &#10;LATERALE  A SINISTRA. SCEGLI L'AREA D'INTERRESSE E SFRUTTA LE POTENZIALITA' DEL SOFTWARE. BUON UTILIZZO." />
+                              <AnchorPane layoutX="292.0" layoutY="93.0" prefHeight="43.0" prefWidth="152.0">
+                                 <children>
+                                    <Button fx:id="infoButton" layoutX="74.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleInfo" prefHeight="56.0" prefWidth="200.0" text="INFORMAZIONI" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

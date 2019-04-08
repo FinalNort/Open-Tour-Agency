@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.RegistrazioneUtente_Controller">
+   <children>
+      <GridPane layoutX="81.0" layoutY="68.0" prefHeight="328.0" prefWidth="663.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="80.0">
+        <columnConstraints>
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="201.0" />
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="216.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputUsername" prefHeight="25.0" prefWidth="270.0" promptText="Username" GridPane.rowIndex="1" />
+            <Label text="Password" GridPane.columnIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="inputPassword" prefWidth="270.0" promptText="password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label contentDisplay="CENTER" text="Ripeti Password" GridPane.columnIndex="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="inputRepeatPassword" prefWidth="270.0" promptText="Ripeti Password" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="Nome" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputFirstName" prefWidth="270.0" promptText="Nome" GridPane.rowIndex="4" />
+            <Label text="Cognome" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputLastName" prefWidth="270.0" promptText="Cognome" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Data di Nascita" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="inputDate" prefWidth="270.0" promptText="gg/mm/aaaa" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="Codice Fiscale" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputCF" prefWidth="270.0" promptText="Codice Fiscale" GridPane.rowIndex="7" />
+            <Label text="E-Mail" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputMail" prefWidth="270.0" promptText="example@example.com" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Telefono" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputPhone" prefWidth="270.0" promptText="Telefono" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label text="Indirizzo" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputAddress" prefWidth="270.0" promptText="Indirizzo" GridPane.rowIndex="10" />
+            <Label text="Città" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputCity" prefWidth="270.0" promptText="Città" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label text="Stato" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="inputState" prefWidth="270.0" promptText="Seleziona Stato" GridPane.columnIndex="2" GridPane.rowIndex="10">
+		      <items>
+		        <FXCollections fx:factory="observableArrayList">
+		          <String fx:value="Francia" />
+		          <String fx:value="Germania" />
+		          <String fx:value="Inghilterra" />
+		          <String fx:value="Italia" />
+		          <String fx:value="Spagna" />
+		        </FXCollections>
+		      </items>
+            </ComboBox>
+            <Label text="Sesso" GridPane.rowIndex="12">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" graphicTextGap="5.0" text="La password deve essere lunga massimo 10 caratteri" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER" graphicTextGap="5.0" text="L'username deve contenere massimo 10 caratteri" textOverrun="CLIP" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="La password deve contenere almeno un numero." textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Ripetere la password" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Inserire Nome" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Inserire Cognome" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Il formato della data di nascita è gg/mm/aaaa" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Inserire il codice fiscale" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="8" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Inserire mail" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Inserire numero di telefono" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="8" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Inserire indirizzo comprensivo di numero civico" textOverrun="CLIP" wrapText="true" GridPane.rowIndex="11" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Inserire città di residenza" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="11" GridPane.valignment="TOP" />
+            <Label alignment="CENTER" graphicTextGap="5.0" text="Scegliere lo Stato di appartentenza" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="11" GridPane.valignment="TOP" />
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="13">
+               <children>
+                  <CheckBox fx:id="inputSexM" mnemonicParsing="false" onAction="#handleSexM" text="M" />
+                  <CheckBox fx:id="inputSexF" mnemonicParsing="false" onAction="#handleSexF" text="F" />
+               </children>
+            </HBox>
+
+         </children>
+      </GridPane>
+      <Label contentDisplay="CENTER" layoutX="244.0" layoutY="21.0" text="Registrazione Utente" textAlignment="CENTER" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="291.0" layoutY="395.0" prefHeight="40.0" prefWidth="495.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="14.0">
+        <buttons>
+          <Button fx:id="register" mnemonicParsing="false" onAction="#registrazioneUtente" text="Registra" />
+            <Button fx:id="close" mnemonicParsing="false" onAction="#handleBack" text="Chiudi" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

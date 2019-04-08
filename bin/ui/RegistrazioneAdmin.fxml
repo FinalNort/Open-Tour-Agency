@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="260.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.RegistrazioneAdmin_Controller">
+   <children>
+      <AnchorPane prefHeight="576.0" prefWidth="570.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="709.0" prefWidth="851.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="150.0" prefWidth="281.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="159.0" prefWidth="252.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="22.0" minHeight="22.0" prefHeight="22.0" valignment="CENTER" vgrow="NEVER" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Username" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputUsernameAdmin" prefHeight="25.0" prefWidth="270.0" promptText="Username" GridPane.rowIndex="1" />
+                  <Label text="Password" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="inputPasswordAdmin" prefWidth="270.0" promptText="Password" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="Nome" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputFirstNameAdmin" prefWidth="270.0" promptText="Nome" GridPane.rowIndex="3" />
+                  <Label text="Cognome" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputLastNameAdmin" prefWidth="270.0" promptText="Cognome" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="E-Mail" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputMailAdmin" prefWidth="270.0" promptText="example@example.com" GridPane.rowIndex="5" />
+
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Label contentDisplay="CENTER" layoutX="70.0" layoutY="14.0" prefHeight="50.0" prefWidth="460.0" text="Registrazione Amministratore" textAlignment="CENTER" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="291.0" layoutY="395.0" prefHeight="40.0" prefWidth="495.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="14.0">
+        <buttons>
+          <Button fx:id="registraAdmin" mnemonicParsing="false" onAction="#registrazioneAdmin" text="Registra" />
+            <Button fx:id="close" mnemonicParsing="false" onAction="#handleBack" text="Chiudi" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

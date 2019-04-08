@@ -1,0 +1,25 @@
+/**
+ * @author Panarosa Gaetano matricola 609416
+ * File CSS per la gestione del lato Front-end
+ */
+.button{
+-fx-background-radius: 2;
+-fx-background-color: #009688;
+-fx-text-fill: white;
+-fx-font-size: 12px;
+}
+/* Tab Pane*/
+.tab{
+    -fx-background-radius: 0;
+}
+.tab-header-area{
+    -fx-background-color:white;
+    -fx-min-height: 0;
+}
+.tab-pane {
+    -fx-tab-min-height: 70;
+    -fx-tab-max-height: 70;
+}
+.tab-label {
+    -fx-content-display: top;
+}
